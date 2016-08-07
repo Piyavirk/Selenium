@@ -10,11 +10,11 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
-public class TestRegister extends DriverSetup{
+public class TestRegister extends DriverSetup {
 
     @Test
-    public void registration(){
-        Home homePage = PageFactory.initElements(driver,Home.class);
+    public void registration() {
+        Home homePage = PageFactory.initElements(driver, Home.class);
         Register register = homePage.clickRegisterLink();
         register.enterFirstname("Piya");
         register.enterlastname("Virk");
